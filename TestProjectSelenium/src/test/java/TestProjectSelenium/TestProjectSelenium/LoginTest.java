@@ -15,14 +15,14 @@ public class LoginTest {
 	WebDriver controlpage;
 
 	@Before
-	public void beforeTest() {
+	public void setUp() {
 		page = new BasePage();
 		pagelogin = new LoginPage();
 		controlpage = page.criarWebDriverFirefox();
 	}
 
 	@Test
-	public void testApp01() {
+	public void validaLoginUsuarioPagSeguro() {
 		page.acessarURL(controlpage, url);
 		page.aguardarCarregarPagina(controlpage);
 		pagelogin.realizarLogin(controlpage, username, password);
@@ -32,7 +32,7 @@ public class LoginTest {
 	}
 
 	@After
-	public void afterTest() {
+	public void tearDown() {
 		page.fecharPagina(controlpage);
 	}
 
