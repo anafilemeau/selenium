@@ -9,7 +9,7 @@ public class LoginTest {
 	
 	String url = "https://pagseguro.uol.com.br/";
 	String username = "ana.delprado@uol.com.br";
-	String password = "or54wef3";
+	String password = "******";
 	LoginPage pagelogin;
 	BasePage page;
 	WebDriver controlpage;
